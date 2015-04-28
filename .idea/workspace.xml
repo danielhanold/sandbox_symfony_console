@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ba919b5-5c49-4347-baec-55a71c12e46d" name="Default" comment="" />
+    <list default="true" id="5ba919b5-5c49-4347-baec-55a71c12e46d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.php" afterPath="$PROJECT_DIR$/application.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="symfony_console.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -25,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21052632" vertical-offset="0" max-vertical-offset="1045">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state vertical-scroll-proportion="-7.806452" vertical-offset="0" max-vertical-offset="396">
+              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
               <folding>
                 <element signature="e#69#107#0#PHP" expanded="true" />
               </folding>
@@ -40,8 +43,20 @@
       <file leaf-file-name="GreetCommand.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Acme/Console/Command/GreetCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.741936" vertical-offset="0" max-vertical-offset="880">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state vertical-scroll-proportion="-13.4838705" vertical-offset="0" max-vertical-offset="880">
+              <caret line="19" column="75" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="75" />
+              <folding>
+                <element signature="e#40#86#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextstyleCommand.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Acme/Console/Command/TextstyleCommand.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33684212" vertical-offset="0" max-vertical-offset="1078">
+              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
               <folding>
                 <element signature="e#40#86#0#PHP" expanded="true" />
               </folding>
@@ -61,6 +76,7 @@
         <option value="$PROJECT_DIR$/GreetCommand.php" />
         <option value="$PROJECT_DIR$/src/Acme/Console/Command/GreetCommand.php" />
         <option value="$PROJECT_DIR$/application.php" />
+        <option value="$PROJECT_DIR$/src/Acme/Console/Command/TextstyleCommand.php" />
       </list>
     </option>
   </component>
@@ -318,22 +334,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.806452" vertical-offset="0" max-vertical-offset="396">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <element signature="e#69#107#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/Console/Command/GreetCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.741936" vertical-offset="0" max-vertical-offset="880">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        <state vertical-scroll-proportion="-13.4838705" vertical-offset="0" max-vertical-offset="880">
+          <caret line="19" column="75" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="75" />
           <folding>
             <element signature="e#40#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application.php">
+    <entry file="file://$PROJECT_DIR$/src/Acme/Console/Command/TextstyleCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21052632" vertical-offset="0" max-vertical-offset="1045">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.33684212" vertical-offset="0" max-vertical-offset="1078">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding>
-            <element signature="e#69#107#0#PHP" expanded="true" />
+            <element signature="e#40#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
