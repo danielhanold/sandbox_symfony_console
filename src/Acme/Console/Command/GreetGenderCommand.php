@@ -13,7 +13,7 @@ class GreetGenderCommand extends Command {
   protected function configure() {
     $this
       ->setName('demo:greet-gender')
-      ->setDescription('Greet someone')
+      ->setDescription('Greet someone and select the gender')
       ->addArgument('name', InputArgument::REQUIRED, 'Who do you want to greet?')
       ->addArgument('last_name', InputArgument::OPTIONAL, 'Your last name')
       ->addOption('yell', NULL, InputOption::VALUE_NONE, 'If set, the task will yell in uppercase letters')

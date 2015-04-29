@@ -7,6 +7,7 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Question\ChoiceQuestion;
 
 class GreetCommand extends Command {
   protected function configure() {
@@ -21,6 +22,14 @@ class GreetCommand extends Command {
 
   protected function execute(InputInterface $input, OutputInterface $output)
   {
+    // Determine which color the output should be.
+    $helper = $this->getHelper('question');
+    $question = new ChoiceQuestion('Please select the color for the output', array('red', 'blue', 'yellow'), 0);
+    $question->setErrorMessage('Color %s is invalid');
+
+    $color = $helper->ask($input, $output, $question);
+    $output->writeln('You selected color: ' . $color);
+
     $name = $input->getArgument('name');
     if ($name) {
       $text = 'Hello ' . $name;
