@@ -8,6 +8,7 @@ use Acme\Console\Command\GreetManyCommand;
 use Acme\Console\Command\GreetGenderCommand;
 use Acme\Console\Command\TextstyleCommand;
 use Acme\Console\Command\FormatterExampleCommand;
+use Acme\Console\Command\MetaCommand;
 use Symfony\Component\Console\Application;
 
 $application = new Application();
@@ -16,4 +17,5 @@ $application->add(new GreetManyCommand());
 $application->add(new GreetGenderCommand());
 $application->add(new TextstyleCommand());
 $application->add(new FormatterExampleCommand());
+$application->add(new MetaCommand());
 $application->run();
