@@ -17,8 +17,17 @@ class FormatterExampleCommand extends Command {
 
   protected function execute(InputInterface $input, OutputInterface $output)
   {
+    // Add text into a section.
     $formatter = $this->getHelper('formatter');
     $formatted_line = $formatter->formatSection('Section Number 1', 'Here is some message related to this section.');
     $output->writeln($formatted_line);
+
+    // Add a blank line.
+    $output->writeln('');
+
+    // Show text in a block.
+    $errorMessages = array('Error!', 'Something went wrong');
+    $formattedBlock = $formatter->formatBlock($errorMessages, 'error', true);
+    $output->writeln($formattedBlock);
   }
 }
