@@ -7,6 +7,7 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Question\ConfirmationQuestion;
 
 class GreetManyCommand extends Command {
   protected function configure() {
@@ -23,6 +24,13 @@ class GreetManyCommand extends Command {
       $text = 'Hello ' . implode(', ', $names);
     } else {
       $text = 'Hello';
+    }
+
+    // Only proceed if user confirms.
+    $helper = $this->getHelper('question');
+    $question = new ConfirmationQuestion('Do you really want to display these names? Enter y to continue.', FALSE);
+    if (!$helper->ask($input, $output, $question)) {
+      return;
     }
 
     $output->writeln($text);
