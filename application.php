@@ -11,7 +11,10 @@ use Acme\Console\Command\FormatterExampleCommand;
 use Acme\Console\Command\MetaCommand;
 use Symfony\Component\Console\Application;
 
-$application = new Application();
+// Create a new application.
+$application = new Application('Danny\'s Console Tool', '0.1');
+
+// Add command objects.
 $application->add(new GreetCommand());
 $application->add(new GreetManyCommand());
 $application->add(new GreetGenderCommand());

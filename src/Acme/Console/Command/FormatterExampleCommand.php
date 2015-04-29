@@ -26,7 +26,7 @@ class FormatterExampleCommand extends Command {
     $output->writeln('');
 
     // Show text in a block.
-    $errorMessages = array('Error!', 'Something went wrong');
+    $errorMessages = array('Error!', 'Something went wrong. JK. This is just a test.');
     $formattedBlock = $formatter->formatBlock($errorMessages, 'error', true);
     $output->writeln($formattedBlock);
   }
