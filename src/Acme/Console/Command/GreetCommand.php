@@ -13,7 +13,8 @@ class GreetCommand extends Command {
     $this
       ->setName('demo:greet')
       ->setDescription('Greet someone')
-      ->addArgument('name', InputArgument::OPTIONAL, 'Who do you want to greet?')
+      ->addArgument('name', InputArgument::REQUIRED, 'Who do you want to greet?')
+      ->addARgument('last_name', InputArgument::OPTIONAL, 'Your last name')
       ->addOption('yell', NULL, InputOption::VALUE_NONE, 'If set, the task will yell in uppercase letters');
   }
 
@@ -22,6 +23,11 @@ class GreetCommand extends Command {
     $name = $input->getArgument('name');
     if ($name) {
       $text = 'Hello ' . $name;
+
+      // If (optional) last name argument was included, add it.
+      if ($last_name = $input->getArgument('last_name')) {
+        $text .= ' ' . $last_name;
+      }
     } else {
       $text = 'Hello';
     }
