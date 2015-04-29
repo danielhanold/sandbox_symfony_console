@@ -15,7 +15,8 @@ class GreetCommand extends Command {
       ->setDescription('Greet someone')
       ->addArgument('name', InputArgument::REQUIRED, 'Who do you want to greet?')
       ->addARgument('last_name', InputArgument::OPTIONAL, 'Your last name')
-      ->addOption('yell', NULL, InputOption::VALUE_NONE, 'If set, the task will yell in uppercase letters');
+      ->addOption('yell', NULL, InputOption::VALUE_NONE, 'If set, the task will yell in uppercase letters')
+      ->addOption('iterations', null, InputOption::VALUE_REQUIRED, 'How many times should the message be printed', 1);
   }
 
   protected function execute(InputInterface $input, OutputInterface $output)
@@ -36,6 +37,8 @@ class GreetCommand extends Command {
       $text = strtoupper($text);
     }
 
-    $output->writeln($text);
+    for ($i = 0; $i < $input->getOption('iterations'); $i++) {
+      $output->writeln($text);
+    }
   }
 }
