@@ -17,7 +17,8 @@ class GreetCommand extends Command {
       ->addArgument('name', InputArgument::REQUIRED, 'Who do you want to greet?')
       ->addArgument('last_name', InputArgument::OPTIONAL, 'Your last name')
       ->addOption('yell', NULL, InputOption::VALUE_NONE, 'If set, the task will yell in uppercase letters')
-      ->addOption('iterations', null, InputOption::VALUE_REQUIRED, 'How many times should the message be printed', 1);
+      ->addOption('iterations', null, InputOption::VALUE_REQUIRED, 'How many times should the message be printed', 1)
+      ->addOption('pre_log', null, InputOption::VALUE_NONE, 'Set if debug messages should be printed before');
   }
 
   protected function execute(InputInterface $input, OutputInterface $output)
